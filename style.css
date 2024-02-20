@@ -104,7 +104,7 @@ input{
     padding: 15px;
 }
 .img-box{
-    width: 100%;
+    width: 100px;
     height: 176px;
     display: flex;
     align-items: center;
@@ -115,6 +115,7 @@ input{
     max-height: 90%;
     object-fit: cover;
     object-position: center;
+
 }
 .bottom{
     margin-top: 20px;

@@ -1,3 +1,5 @@
+
+
 const product=[
     {
         id: 0,
@@ -43,11 +45,14 @@ const product=[
     },
 ]
 
-const categories = [...new set(product.map((item)=> {return item}))]
+
+
+// console.log(categories)
 
 document.getElementById('searchBar').addEventListener('keyup', (e)=>{
     const searchData = e.target.value.toLowerCase();
-    const filterData = categories.filter((item)=> {
+    const filterData = product.filter((item)=> {
+        // console.log(searchData)
         return(
             item.title.toLowerCase().includes(searchData)
         )
@@ -57,13 +62,14 @@ document.getElementById('searchBar').addEventListener('keyup', (e)=>{
 
 const displayitem = (items)=> {
     document.getElementById('root').innerHTML=items.map((item)=>{
-        var {Image, title, price} = item;
+        var {id,Image, title, price} = item;
+        console.log(Image)
         return(
             `<div class='box'>
-                <div class='img-box>
-                   <img class='images' src=${image}></img>
+                <div class="img-box">
+                   <img class="images" src="${Image}" alt="this">
                 </div>
-                <div class='bottom'>
+                <div class="bottom">
                    <p>${title}</p>
                    <h2>${price}.00</h2>
                    <button>Add to cart</button>
@@ -72,4 +78,22 @@ const displayitem = (items)=> {
         )
     }).join('')
 };
-displayitem(categories);
+displayitem(product);
+
+/*var cors = require(cors());
+app.use(cors());
+app.options('*',cors());
+var allowCrossDomain = function(req,res,next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();  
+}
+app.use(allowCrossDomain)*/
+
+/*app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });*/
