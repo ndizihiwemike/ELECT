@@ -20,25 +20,25 @@ const product=[
     {
         id: 3,
         Image: 'https://cdn.gethypervisual.com/images/shopify/8df39e19-3770-4b6a-9c2e-98585e364ce3/w1200_fb16_Photo_Feb_22__10_23_35_PM.jpg',
-        title: 'EAR PADS',
+        title: 'EAR PICK',
         price: 100
     },
     {
         id: 4,
-        Image: 'Untitled.jpeg',
-        title: 'EAR PADS',
+        Image: 'IMG_20230518_152248.jpg',
+        title: 'EAR PIEC',
         price: 130
     },
     {
         id: 5,
         Image: 'IMG_20230518_175110.jpg',
-        title: 'EAR PADS',
+        title: 'EAR PAD',
         price: 320
     },
     {
         id: 6,
         Image: 'IMG-20230121-WA0011.jpg',
-        title: 'EAR PADS',
+        title: 'EAR PAST',
         price: 720
     },
 ]
