@@ -90,7 +90,7 @@ function addtocart(a){
     displaycart();
 }
 function delElement(a){
-    cart.slice(0);
+    cart.pop(a, 1);
     displaycart();
 }
 function displaycart(a){
