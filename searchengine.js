@@ -4,43 +4,43 @@ const product=[
     {
         id: 0,
         Image:'Untitled.jpeg',
-        title: 'EAR PADS',
-        price: 120
+        title: 'CAMERA',
+        price: 520
     },
     {
         id: 1,
-        Image: '8cfeba07d93e44588e220e01780e090d.jpg',
-        title: 'EAR PADS',
-        price: 120
+        Image: 'LAPTOP.jpg',
+        title: 'LAPTOP',
+        price: 620
     },
     {
         id: 2,
         Image: 'Untitled.jpeg',
-        title: 'EAR PADS',
+        title: 'MIX',
         price: 120
     },
     {
         id: 3,
-        Image: 'https://cdn.gethypervisual.com/images/shopify/8df39e19-3770-4b6a-9c2e-98585e364ce3/w1200_fb16_Photo_Feb_22__10_23_35_PM.jpg',
-        title: 'EAR PICK',
+        Image: 'https://cdn.gethypervisual.com/images/shopify/8df39e19-3770-4b6a-9c2e-98585e364 ce3/w1200_fb16_Photo_Feb_22__10_23_35_PM.jpg',
+        title: 'HEAD SETS',
         price: 100
     },
     {
         id: 4,
         Image: 'IMG_20230518_152248.jpg',
-        title: 'EAR PIEC',
+        title: 'PHONE',
         price: 130
     },
     {
         id: 5,
         Image: 'IMG_20230518_175110.jpg',
-        title: 'EAR PAD',
+        title: 'POSTER',
         price: 320
     },
     {
         id: 6,
         Image: 'IMG-20230121-WA0011.jpg',
-        title: 'EAR PAST',
+        title: 'STICKER',
         price: 720
     },
 ]
@@ -61,6 +61,9 @@ document.getElementById('searchBar').addEventListener('keyup', (e)=>{
 });
 
 const displayitem = (items)=> {
+// const categories = [...new setInterval(product.map((item)=>
+//     {return item}))]
+    let i=0;
     document.getElementById('root').innerHTML=items.map((item)=>{
         var {id,Image, title, price} = item;
         console.log(Image)
@@ -71,29 +74,49 @@ const displayitem = (items)=> {
                 </div>
                 <div class="bottom">
                    <p>${title}</p>
-                   <h2>${price}.00</h2>
-                   <button>Add to cart</button>
-                </div>
+                   <h2>${price}.00</h2>`+
+                   "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
+                `</div>
             </div>`
         )
     }).join('')
 };
 displayitem(product);
 
-/*var cors = require(cors());
-app.use(cors());
-app.options('*',cors());
-var allowCrossDomain = function(req,res,next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();  
-}
-app.use(allowCrossDomain)*/
+var cart =[];
 
-/*app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET, PUT, POST");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });*/
+function addtocart(a){
+    cart.push(0);
+    displaycart();
+}
+function delElement(a){
+    cart.slice(0);
+    displaycart();
+}
+function displaycart(a){
+    let j = 0, total=0;
+    document.getElementById("count").innerHTML=cart.length;
+    if(cart.length==0){
+        document.getElementById('cartItem').innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML="$ "+0+".00";
+
+    }
+    else{
+        document.getElementById("cartItem").innerHTML = cart.map((items)=>
+        {
+            var {Image, title, price} = items;
+            total=total+price;
+        document.getElementById("total").innerHTML="$ "+total+".00";
+
+            return(
+                `<div class="cart-item">
+                <div class="row-ing">
+                    <img class="rowing" src=${Image}>
+                </div> 
+                <p style='font-size:12px;'>${title}</p>
+                <h2 style='font-size: 15px;'>${price}.00</h2>`+
+                "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>"
+            );
+        }).join('');
+    }
+}
