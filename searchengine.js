@@ -3,7 +3,7 @@
 const product=[
     {
         id: 0,
-        Image:'Untitled.jpeg',
+        Image:'LAPTOP.jpeg',
         title: 'CAMERA',
         price: 520
     },
@@ -27,13 +27,13 @@ const product=[
     },
     {
         id: 4,
-        Image: 'IMG_20230518_152248.jpg',
+        Image: 'PHONE.jpg',
         title: 'PHONE',
         price: 130
     },
     {
         id: 5,
-        Image: 'IMG_20230518_175110.jpg',
+        Image: 'POSTER.jpg',
         title: 'POSTER',
         price: 320
     },
