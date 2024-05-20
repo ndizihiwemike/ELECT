@@ -5,7 +5,7 @@ const product=[
         id: 0,
         Image:'LAPTOP.jpeg',
         title: 'CAMERA',
-        price: 520
+        price: 520,
     },
     {
         id: 1,
