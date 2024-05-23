@@ -3,14 +3,14 @@
 const product=[
     {
         id: 0,
-        Image:'LAPTOP.jpeg',
-        title: 'CAMERA',
+        Image:'Capsules filling plate.jpg',
+        title: 'Capscule plate',
         price: 520,
     },
     {
         id: 1,
-        Image: 'LAPTOP.jpg',
-        title: 'LAPTOP',
+        Image: 'Empty capscules.jpg',
+        title: 'Capscules',
         price: 620
     },
     {
@@ -113,8 +113,8 @@ function displaycart(a){
                 <div class="row-ing">
                     <img class="rowing" src=${Image}>
                 </div> 
-                <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>${price}.00</h2>`+
+                <p style='font-size:10px;'>${title}</p>
+                <h2 style='font-size: 10px;'>${price}.00</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>"
             );
         }).join('');
