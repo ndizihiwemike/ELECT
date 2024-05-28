@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>electronic web</title>
+    <style>
+        .p{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: red;
+        }
+        img{
+            float: 1;
+            align-self: center;
+            height: 150px;
+            width: 200px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/b8c51a70ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!-- <h1 class="p"><strong>PATRICA ELECTRONIC CENTRE</strong></h1>  -->
+
+<div class="data">
+<div class="top">
+    <p>+256772270414</p>
+    <p>mikendizihiwe@gmail.com</p>
+</div>
+<div class="header">
+    <p>BUY EVERY THING ONLINE</p>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+</div>
+<div class="searchbar">
+    <input type="text" placeholder="search..." id="searchBar" name="searchBar">
+
+</div>
+   <div class="container">
+    <div id="root"></div>
+    <div class="sidebar">
+        <div class="head"><p>my cart</p></div>
+        <div>
+            <div id="cartItem">Your cart is empty</div>
+            <form action="/sendData" method="post" id="userForm">
+            <label for="Name">Your Name</label>
+            <input type="text" placeholder="Name" name="Name" required>
+            <label for="Name">Your E-mail</label>
+            <input type="text" placeholder="E-mail" name="email" required>
+            <label for="Name">Your phone number</label>
+            <input type="text" placeholder="tel-no" name="tel-no" required>
+            <label for="Name">Your location</label>
+            <input type="text" placeholder="Location" name="Location" required>
+            <button onclick="SubmitData()">Submit</button>
+        </form>
+        </div>
+        
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+        </div>
+        
+        
+    </div>
+    
+   <script src="searchengine.js"></script>
+</body>
+</html>
