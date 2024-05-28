@@ -64,5 +64,35 @@
     </div>
     
    <script src="searchengine.js"></script>
+   
+
+   <script>
+    // Attach an event listener to the form submission
+    document.getElementById("userForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Get form data
+        const formData = new FormData(event.target);
+
+        // You can now use 'formData' to send the data to the server or perform other actions
+        // For example, you can use fetch() to send the data to a server endpoint:
+        fetch("/sendData", {
+            method: "POST",
+            body: formData,
+        })
+        .then((response) => {
+            if (response.ok) {
+                // Handle success (e.g., show a success message)
+                console.log("Form data submitted successfully!");
+            } else {
+                // Handle errors (e.g., show an error message)
+                console.error("Error submitting form data.");
+            }
+        })
+        .catch((error) => {
+            console.error("An error occurred:", error);
+        });
+    });
+</script>
 </body>
 </html>
