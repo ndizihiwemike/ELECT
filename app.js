@@ -1,32 +1,3 @@
-// const express = require('express');
-// const path = require('path');
-// // const router = require('./routes/userRoute')
-
-// const app = express();
-
-// app.use(express.static(path.join(__dirname,'./')));
-
-// // app.use('/',router)
-
-// app.listen(3080,() =>{
-//     console.log(`working on port 3080`);
-// })
-
-// const express = require('express');
-const path = require('path');
-const router = require('./routes/userRoute')
-
-// const app = express();
-
-app.use(express.static(path.join(__dirname, "public")));
-
-app.use('/',router)
-
-app.listen(3000,() =>{
-    console.log("working on port 3050");
-})
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -68,7 +39,7 @@ app.post('/sendData', async (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
