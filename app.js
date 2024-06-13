@@ -4,6 +4,8 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname,"public")));
+
 
 // Handle form submission
 app.post('/sendData', async (req, res) => {
