@@ -8,7 +8,7 @@ app.use(bodyParser.static(path.join(__dirname,"public")));
 
 
 // Handle form submission
-app.post('/sendData', async (req, res) => {
+app.post('/submit-form', async (req, res) => {
   try {
     // Extract form data
     const { Name, email, tel_no, Location } = req.body;
