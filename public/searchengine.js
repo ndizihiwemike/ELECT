@@ -1630,24 +1630,47 @@ function displaycart(a){
 
     }
     else{
-        document.getElementById('cartItem').innerHTML ='';
-     cart.forEach((item)=> 
-        {
-            var {Image, title, price} = item;
-            // console.log('kita:');
-            // console.log(Image+": " +title, price);
-            total=total+price;
-            // console.log("total: "+total)
-        document.getElementById("total").innerHTML="$ "+total+"";
-        document.getElementById('cartItem').innerHTML +=   `<div class='cart-item'>
-                <div class='row-ing'>
-                    <img class='rowing' src="${Image}" alt="this">
-                </div> 
-                <p style='font-size:10px;'>${title}</p>
-                <h2 style='font-size: 10px;'>${price}</h2>`+
-                "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>";
+        document.getElementById('cartItem').innerHTML = '';
+let total = 0;
+let j = 0;
+cart.forEach((item) => {
+  var { Image, title, price } = item;
+  console.log(Image + ": " + title, price);
+  total += price;
+  console.log("total: " + total);
+  document.getElementById("total").innerHTML = "$ " + total + "";
+  document.getElementById('cartItem').innerHTML += `
+    <div class='cart-item'>
+      <div class='row-ing'>
+        <img class='rowing' src="${Image}" alt="this">
+      </div>
+      <p style='font-size:10px;'>${title}</p>
+      <h2 style='font-size: 10px;'>${price}</h2>
+      <i class='fa-solid fa-trash' onclick='delElement(${j++})'></i>
+    </div>
+  `;
+})};
+displaycart(product);}
+
+
+//         document.getElementById('cartItem').innerHTML ='';
+//      cart.forEach((item)=> 
+//         {
+//             var {Image, title, price} = item;
+//             // console.log('kita:');
+//             console.log(Image+": " +title, price);
+//             total=total+price;
+//             console.log("total: "+total)
+//         document.getElementById("total").innerHTML="$ "+total+"";
+//         document.getElementById('cartItem').innerHTML+=   `<div class='cart-item'>
+//                 <div class='row-ing'>
+//                     <img class='rowing' src="${Image}" alt="this">
+//                 </div> 
+//                 <p style='font-size:10px;'>${title}</p>
+//                 <h2 style='font-size: 10px;'>${price}</h2>`+
+//                 "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>";
             
-        });
-    }
-};
-displaycart(product);
+//         });
+//     }
+// };
+// displaycart(product);
