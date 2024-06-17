@@ -41,17 +41,22 @@
     <div class="sidebar">
         <div class="head"><p>my cart</p></div>
         <div>
-            <div id="cartItem">Your cart is empty</div>
-            <form action="/submit-form" method="post" id="userForm">
+          <form action="/submit-form" method="post" id="userForm">
             <label for="Name">Your Name</label>
-            <input type="text" placeholder="Name" name="Name" required>
-            <label for="Name">Your E-mail</label>
-            <input type="text" placeholder="E-mail" name="email" required>
-            <label for="Name">Your phone number</label>
-            <input type="text" placeholder="tel-no" name="tel-no" required>
-            <label for="Name">Your location</label>
-            <input type="text" placeholder="Location" name="Location" required>
-            <button onclick="SubmitData()">Submit</button>
+            <input id="Name" type="text" placeholder="Name" name="Name" required>
+            
+            <label for="Email">Your E-mail</label>
+            <input id="Email" type="email" placeholder="E-mail" name="email" required>
+            
+            <label  for="Phone">Your phone number</label>
+            <input id="Phone" type="tel" placeholder="tel-no" name="tel-no" required>
+            
+            <label for="Location">Your location</label>
+            <input id="Location" type="text" placeholder="Location" name="Location" required>
+            
+            <div id="cartItem">Your cart is empty</div>
+            <button type="submit">Submit</button>
+            
         </form>
         </div>
         
@@ -67,32 +72,42 @@
    
 
    <script>
-    // Attach an event listener to the form submission
-    document.getElementById("userForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission behavior
+    const userForm = document.getElementById("userForm");
 
-        // Get form data
-        const formData = new FormData(event.target);
+userForm.addEventListener("submit", async (e) => {
+    e.preventDefault(); // Prevent form submission
 
-        // You can now use 'formData' to send the data to the server or perform other actions
-        // For example, you can use fetch() to send the data to a server endpoint:
-        fetch("/submit-form", {
+    // Get form input values
+    const Name = document.getElementById("Name");
+    const email = document.getElementById("Email");
+    const phone = document.getElementById("Phone");
+    const Location = document.getElementById("Location");
+    const cartItem = document.getElementById("cartItem").textContent; // Extract cart item text
+
+   
+    try {
+        const response = await fetch("/submit-form", {
             method: "POST",
-            body: formData,
-        })
-        .then((response) => {
-            if (response.ok) {
-                // Handle success (e.g., show a success message)
-                console.log("Form data submitted successfully!");
-            } else {
-                // Handle errors (e.g., show an error message)
-                console.log("Error submitting form data.");
-            }
-        })
-        .catch((error) => {
-            console.log("An error occurred:", error);
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ name, email, phone, location, cartItem })
         });
-    });
+
+        if (response.ok) {
+            console.log("Form data submitted successfully!");
+            // You can display a success message to the user here
+        } else {
+            console.log("Error submitting form data:", response.status);
+            alert("Error submitting form data.");
+            // You can display an error message to the user here
+        }
+    } catch (error) {
+        console.log("An error occurred:", error);
+        alert("An error occurred:");
+        // You can display an error message to the user here
+    }
+});
 </script>
 </body>
 </html>

@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname,"public")));
 
 
 // Handle form submission
@@ -15,10 +16,10 @@ app.post('/submit-form', async (req, res) => {
 
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      service: 'Gmail', // Use your email service provider
+      service: 'Yandex', // Use your email service provider
       auth: {
-        user: 'mickyjackie93@gmail.com', // Your email address
-        pass: 'm18989422', // Your email password
+        user: 'mndizihiwe@yandex.com', // Your email address
+        pass: 'votxcetqzdxeudvp', // Your email password
       },
     });
 

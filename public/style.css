@@ -36,10 +36,10 @@
     color: black;
 }
 .sidebar{
-    width: 37%;
+    width: 40%;
     border: solid #eee;
     border-radius: 3px;
-    margin-left: 5px;
+    margin-left: 10px;
     text-align: center;
     padding: 4vh;
     height: 200vh;
@@ -76,39 +76,16 @@
     color: orangered;
 } */
 .searchbar{
-    width: 70%;
-    right: 0;
-    /* background-color: #eee; */
+    width: 100%;
+    right: 10px;
     border-radius: 3px;
     margin: 5px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-/* input{
-    border: none;
-    outline: none;
-    background: none;
-}
-.glss:hover{
-    color: orangered;
-    cursor: pointer;
-}
-.social-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.fa-brands{
-    font-size: 50px;
-    margin: 0 10px;
-    color: #333;
-    cursor: pointer;
-}
-.fa-brands:hover{
-    color: orangered;
-} */
+
 .top{
     height: 60px;
     border-radius: 3px;
@@ -133,7 +110,8 @@
     color: white;
 }
 #root{
-    width: 50%;
+    width: 30%;
+    height: 20%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
@@ -146,7 +124,7 @@
     justify-content: space-between;
     border: 1px solid #333;
     border-radius: 5px;
-    padding: 5px;
+    height: 160px;
 }
 .img-box{
     width: 100px;
@@ -163,30 +141,36 @@
 
 }
 .bottom{
-    margin-top: 5px;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5px;
+    font-size: 10px;
     justify-content: space-between;
-    height: 80px;
 }
+/* #cartItem{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+} */
 h2{
     font-size: 10px;
     color: orangered;
 }
 p{
-    font-size: 15px;
+    font-size: 10px;
 }
 button{
-    width: 80%;
+    width: 100%;
     position: relative;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #333;
-    font-size: 15px;
-    padding: 5px 5px;
+    font-size: 10px;
+    padding: 2px 3px;
     cursor: pointer;
     color: white;
 }
@@ -204,18 +188,18 @@ button:hover{
     margin: 10px 10px;
 }
 .row-ing{
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
     border: 1px solid goldenrod;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .rowing{
-    max-width: 43px;
-    max-height: 43px;
-    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 40%;
 }
 .fa-trash:hover{
     cursor: pointer;
