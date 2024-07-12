@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>NATURALIS PHARMACIE PRODUCTS</title>
+<link rel="icon" href="IMG_E0376.JPG" type="image/x-icon">
+
+    <link rel="icon" href="public/favicon.ico">
+    <title>TRICIA SCENTED SECRETS</title>
     <style>
         .p{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             background-color: red;
         }
-        img{
+        /* img{
             float: 1;
             align-self: center;
             height: 150px;
             width: 200px;
-        }
+        } */
     </style>
     <script src="https://kit.fontawesome.com/b8c51a70ab.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +33,7 @@
 </div>
 <div class="header">
     <p>BUY EVERY THING ONLINE</p>
-    <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+    <div class="cart"><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></a></div>
 </div>
 <div class="searchbar">
     <input type="text" placeholder="search..." id="searchBar" name="searchBar">
@@ -38,31 +41,32 @@
 </div>
    <div class="container">
     <div id="root"></div>
-    <div class="sidebar">
+     <div class="sidebar">
         <div class="head"><p>my cart</p></div>
         <div>
-          <form action="/submit-form" method="post" id="userForm">
-            <label for="Name">Your Name</label>
-            <input id="Name" type="text" placeholder="Name" name="Name" required>
-            
-            <label for="Email">Your E-mail</label>
-            <input id="Email" type="email" placeholder="E-mail" name="email" required>
-            
-            <label  for="Phone">Your phone number</label>
-            <input id="Phone" type="tel" placeholder="tel-no" name="tel-no" required>
-            
-            <label for="Location">Your location</label>
-            <input id="Location" type="text" placeholder="Location" name="Location" required>
-            
-            <div id="cartItem">Your cart is empty</div>
-            <button type="submit">Submit</button>
-            
-        </form>
-        </div>
-        
-        <div class="foot">
-            <h3>Total</h3>
-            <h2 id="total">$ 0.00</h2>
+
+            <form action="/submit-form" method="post" id="userForm">
+                <label for="Name">Your Name</label>
+                <input id="Name" type="text" placeholder="Name" name="Name" required>
+                
+                <label for="Email">Your E-mail</label>
+                <input id="Email" type="email" placeholder="E-mail" name="email" required>
+                
+                <label for="Phone">Your phone number</label>
+                <input id="Phone" type="tel" placeholder="Phone" name="Phone" required>
+                
+                <label for="Location">Your location</label>
+                <input id="Location" type="text" placeholder="Location" name="Location" required>
+                
+                <div id="cartItem">Your cart is empty</div>
+              
+                <div class="foot">
+                  <h3>Total</h3>
+                  <h2 id="total">$ 0</h2>
+                </div>
+                
+                <button type="submit">Submit</button>
+              </form>
         </div>
         
         
@@ -72,42 +76,83 @@
    
 
    <script>
-    const userForm = document.getElementById("userForm");
+
+const userForm = document.getElementById("userForm");
 
 userForm.addEventListener("submit", async (e) => {
-    e.preventDefault(); // Prevent form submission
+  e.preventDefault(); // Prevent form submission
 
-    // Get form input values
-    const Name = document.getElementById("Name");
-    const email = document.getElementById("Email");
-    const phone = document.getElementById("Phone");
-    const Location = document.getElementById("Location");
-    const cartItem = document.getElementById("cartItem").textContent; // Extract cart item text
+  // Get form input values
+  const name = document.getElementById("Name").value;
+  const email = document.getElementById("Email").value;
+  const phone = document.getElementById("Phone").value;
+  const location = document.getElementById("Location").value;
+  const cartItems = []; // Initialize an empty array to store cart items
 
-   
-    try {
-        const response = await fetch("/submit-form", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ name, email, phone, location, cartItem })
-        });
-
-        if (response.ok) {
-            console.log("Form data submitted successfully!");
-            // You can display a success message to the user here
-        } else {
-            console.log("Error submitting form data:", response.status);
-            alert("Error submitting form data.");
-            // You can display an error message to the user here
-        }
-    } catch (error) {
-        console.log("An error occurred:", error);
-        alert("An error occurred:");
-        // You can display an error message to the user here
+  // Get cart items from the #cartItem div
+  const cartItemElements = document.getElementById("cartItem").children;
+  for (const element of cartItemElements) {
+    if (element.tagName === "DIV" && element.classList.contains("cart-item")) {
+      const cartItem = {
+        image: element.querySelector("img").src,
+        title: element.querySelector("p").textContent,
+        price: element.querySelector("h2").textContent
+      };
+      cartItems.push(cartItem);
     }
+  }
+  console.log(cartItems)
+  // const total = document.getElementById("total").value;
+  // Calculate the total price
+const totalPriceString = cartItems.reduce((acc, item) => {
+  // totalPrice.toFixed(2);
+  return acc + parseFloat(item.price);
+}, 0);
+
+// Create a string to display the cart items in the email
+// const cartItemsString = JSON.stringify(cartItems, null, 2);
+
+// Format totalPrice as a string with 2 decimal places
+// const totalPriceString = totalPrice.toFixed(2);
+
+const cartItemsString = cartItems.map((item, index) => {
+  JSON.stringify(cartItems, null, 2);
+  return `${index + 1}. ${item.title} - ${item.price}`;
+}).join("\n");
+
+  try {
+  const response = await fetch("/submit-form", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: name,
+      email: email,
+      phone: phone,
+      location: location,
+      cartItems: cartItems,
+      total: total
+    })
+  });
+
+  if (response.ok) {
+    console.log("Form data submitted successfully!");
+    // You can display a success message to the user here
+  } else {
+    console.log("Error submitting form data:", response);
+    alert("Error submitting form data.");
+    // You can display an error message to the user here
+  }
+} catch (error) {
+  console.log("An error occurred:", error);
+  alert("An error occurred:");
+  // You can display an error message to the user here
+}
+
 });
+
+
 </script>
 </body>
 </html>

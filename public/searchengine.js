@@ -1,771 +1,771 @@
 const product=[
     {
         id: 0,
-        Image:'Capsules filling plate.jpg',
+        Image:'IMG_E0001.JPG',
         title: 'Capscule plate',
-        price: '550,000 Ushs',
+        price: 550000 
     },
     {
         id: 1,
-        Image: 'Empty capscules.jpg',
-        title: 'Empty Capscules 300pcs',
-        price: '100,000 Ushs'
+        Image: 'IMG_E0002.JPG',
+        title: 'Capscules',
+        price: 100000
     },
     {
         id: 2,
-        Image: '',
+        Image: 'IMG_E0003.JPG',
         title: 'Adivasi 70m/s',
-        price: '36,000 Ushs'
+        price: 36000 
     },
     {
         id: 3,
-        Image: '',
+        Image: 'IMG_E0004.JPG',
         title: 'Adivasi 150m/s',
-        price: '51,000 Ushs'
+        price: 51000
     },
     {
         id: 4,
-        Image: '',
+        Image: 'IMG_E0005.JPG',
         title: 'Adivasi 270m/s',
-        price: '98,000 Ushs'
+        price: 98000 
     },
     {
         id: 5,
-        Image: '',
+        Image: 'IMG_E0006.JPG',
         title: 'Adivasi 500m/s',
-        price: '126,000 Ushs'
+        price: 126000 
     },
     {
         id: 6,
-        Image: '',
+        Image: 'IMG_E0007.JPG',
         title: 'Adivasi 100m/s',
-        price: '240,000 Ushs'
+        price: 240000 
     },
     {
         id: 7,
-        Image: '',
+        Image: 'IMG_E0008.JPG',
         title: 'Anti Aging Butter Big',
-        price: '30,000 Ushs'
+        price: 30000 
     },
     {
         id: 8,
-        Image: '',
+        Image: 'AQME6238.JPG',
         title: 'Anti Aging Butter small',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 9,
-        Image: '',
+        Image: 'BCOQ0935.JPG',
         title: 'Anti Aging cream Big',
-        price: '30,000 Ushs'
+        price: 30000 
     },
     {
         id: 10,
-        Image: '',
+        Image: 'CEAL8536.JPG',
         title: 'Anti Aging Cream small',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 11,
-        Image: '',
+        Image: 'IMG_0699.JPG',
         title: 'Turmeric Gel',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 12,
-        Image: '',
+        Image: 'IMG_E0009.JPG',
         title: 'facial scrub',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 13,
-        Image: '',
+        Image: 'IMG_E0011.JPG',
         title: 'Bena Chocolate Cream',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 14,
-        Image: '',
+        Image: 'IMG_E0012.JPG',
         title: 'Facial Mask',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 15,
-        Image: '',
+        Image: 'IMG_E0013.JPG',
         title: 'Bajaji Powder',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 16,
-        Image: '',
+        Image: 'IMG_E0014.JPG',
         title: 'Sea Salt',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 17,
-        Image: '',
+        Image: 'IMG_E0015.JPG',
         title: 'Scar removal oil',
-        price: '26,000 Ushs'
+        price: 26000
     },
     {
         id: 18,
-        Image: '',
+        Image: 'IMG_E0016.JPG',
         title: 'Scar Removal Powder',
-        price: '25,000 Ushs'
+        price: 25000 
     },
     {
         id: 19,
-        Image: '',
+        Image: 'IMG_E0017.JPG',
         title: 'Warts Oil',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 20,
-        Image: '',
+        Image: 'IMG_E0018.JPG',
         title: 'Alkaline tea small',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 21,
-        Image: '',
+        Image: 'IMG_E0019.JPG',
         title: 'Alkaline tea big',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 22,
-        Image: '',
+        Image: 'IMG_E0020.JPG',
         title: 'Molasses big',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 23,
-        Image: '',
+        Image: 'IMG_E0021.JPG',
         title: 'Alkaline Powder small',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 24,
-        Image: '',
+        Image: 'IMG_E0022.JPG',
         title: 'Sea Moss',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 25,
-        Image: '',
+        Image: 'IMG_E0023.JPG',
         title: 'Wild Yam',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 26,
-        Image: '',
+        Image: 'IMG_E0024.JPG',
         title: 'Smile up',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 27,
-        Image: '',
+        Image: 'IMG_E0025.JPG',
         title: 'Prunus Powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 28,
-        Image: '',
+        Image: 'IMG_E0026.JPG',
         title: 'Rosemary Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 29,
-        Image: '',
+        Image: 'IMG_E0027.JPG',
         title: 'DFP',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 30,
-        Image: '',
+        Image: 'IMG_E0028.JPG',
         title: 'Charcoal tooth paste small',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 31,
-        Image: '',
+        Image: 'IMG_E0029.JPG',
         title: 'Fountain',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 32,
-        Image: '',
+        Image: 'IMG_E0030.JPG',
         title: 'Tightening Powder',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 33,
-        Image: '',
+        Image: 'IMG_E0031.JPG',
         title: 'Rooting Powder',
         price: '30,000 Ushs'
     },
     {
         id: 34,
-        Image: '',
+        Image: 'IMG_E0032.JPG',
         title: 'Flax Oil',
         price: '15,000 Ushs'
     },
     {
         id: 35,
-        Image: '',
+        Image: 'IMG_E0033.JPG',
         title: 'Sesame Oil big',
         price: '10,000 Ushs'
     },
     {
         id: 37,
-        Image: '',
+        Image: 'IMG_E0034.JPG',
         title: 'Sesame Oil small',
         price: '5,000 Ushs'
     },
     {
         id: 38,
-        Image: '',
+        Image: 'IMG_E0035.JPG',
         title: 'Inflamention Jelly big',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 39,
-        Image: '',
+        Image: 'IMG_E0036.JPG',
         title: 'Etutu Jelly',
-        price: '60,000 Ushs'
+        price: 60000 
     },
     {
         id: 40,
-        Image: '',
+        Image: 'IMG_E0037.JPG',
         title: 'Coconut Oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 41,
-        Image: '',
+        Image: 'IMG_E0038.JPG',
         title: 'Massage Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 42,
-        Image: '',
+        Image: 'IMG_E0039.JPG',
         title: 'Dark Knuckle Jelly',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 43,
-        Image: '',
+        Image: 'IMG_E0040.JPG',
         title: 'Cinnamon Oil',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 44,
-        Image: '',
+        Image: 'IMG_E0041.JPG',
         title: 'Vitamin E Oil',
-        price: '40,000 Ushs'
+        price: 40000
     },
     {
         id: 45,
-        Image: '',
+        Image: 'IMG_E0042.JPG',
         title: 'Neem Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 46,
-        Image: '',
+        Image: 'IMG_E0043.JPG',
         title: 'Omusa Powder',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 47,
-        Image: '',
+        Image: 'IMG_E0044.JPG',
         title: 'Caster Oil Big',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 48,
-        Image: '',
+        Image: 'IMG_E0045.JPG',
         title: 'Caster Oil small',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 49,
-        Image: '',
+        Image: 'IMG_E0046.JPG',
         title: 'Argan Oil',
-        price: '30,000 Ushs'
+        price: 30000 
     },
     {
         id: 50,
-        Image: '',
+        Image: 'IMG_E0047.JPG',
         title: 'Jasmine Spray small',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 51,
-        Image: '',
+        Image: 'IMG_E0048.JPG',
         title: 'Zinc Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 52,
-        Image: '',
+        Image: 'IMG_E0049.JPG',
         title: 'Pulling Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 53,
-        Image: '',
+        Image: 'IMG_E0050.JPG',
         title: 'Neem Oil 20m/s',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 54,
-        Image: '',
+        Image: 'IMG_E0051.JPG',
         title: 'Hips Oil',
-        price: '60,000 Ushs'
+        price: 60000
     },
     {
         id: 55,
-        Image: '',
+        Image: 'IMG_E0052.JPG',
         title: 'Maca',
         price: 720
     },
     {
         id: 56,
-        Image: '',
+        Image: 'IMG_E0053.JPG',
         title: 'Eucalyptus Oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 57,
-        Image: '',
+        Image: 'IMG_E0054.JPG',
         title: 'Eucalyptus Tea',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 58,
-        Image: '',
+        Image: 'IMG_E0055.JPG',
         title: 'Cedar Oil',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 59,
-        Image: '',
+        Image: 'IMG_E0056.JPG',
         title: 'Cypress Tea',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 60,
-        Image: '',
+        Image: 'IMG_E0057.JPG',
         title: 'Candle Nut Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 61,
-        Image: '',
+        Image: 'IMG_E0058.JPG',
         title: 'Nettle Powder',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 62,
-        Image: '',
+        Image: 'IMG_E0059.JPG',
         title: 'Uterine Wash',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 63,
-        Image: '',
+        Image: 'IMG_E0060.JPG',
         title: 'Activated Charcoal Big',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 64,
-        Image: '',
+        Image: 'IMG_E0061.JPG',
         title: 'Electric Daisy Oil 20m/s small',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 65,
-        Image: '',
+        Image: 'IMG_E0062.JPG',
         title: 'Mpirivuma Oil',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 66,
-        Image: '',
+        Image: 'IMG_E0063.JPG',
         title: 'Frankincense Oil',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 67,
-        Image: '',
+        Image: 'IMG_E0064.JPG',
         title: 'Apple cider Vineger Big',
-        price: '30,000 Ushs' 
+        price: 30000
     },
     {
         id: 68,
-        Image: '',
+        Image: 'IMG_E0065.JPG',
         title: 'Virgin Skin Oil',
-        price: '39,000 Ushs'
+        price: 39000
     },
     {
         id: 69,
-        Image: '',
+        Image: 'IMG_E0066.JPG',
         title: 'Aloe Vera Oil',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 70,
-        Image: '',
+        Image: 'IMG_E0067.JPG',
         title: 'Lavender Oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 71,
-        Image: '',
+        Image: 'IMG_E0068.JPG',
         title: 'Cayenne Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 72,
         Image: '',
         title: 'Mint Oil',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 73,
         Image: '',
         title: 'Covidex',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 74,
         Image: '',
         title: 'Turmeric Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 75,
         Image: '',
         title: 'Fenugreek Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 76,
         Image: '',
         title: 'Jasmine Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 77,
         Image: '',
         title: 'Thivies Oil',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 78,
         Image: '',
         title: 'Sweet Trip',
-        price: '36,000 Ushs'
+        price: 36000 
     },
     {
         id: 79,
         Image: '',
         title: 'Chia Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 80,
         Image: '',
         title: 'Cloves Oil',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 81,
         Image: '',
         title: 'Black Seed Oil',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 82,
         Image: '',
         title: 'Lip Balm',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 83,
         Image: '',
         title: 'Maco',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 84,
         Image: '',
         title: 'Curcuma Comos',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 85,
         Image: '',
         title: 'Koff Not',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 86,
         Image: '',
         title: 'Nuts Honey Big',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 87,
         Image: '',
         title: 'Cinnamon Nector Big',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 88,
         Image: '',
         title: 'Cinnamon Nector small',
-        price: '8,000 Ushs'
+        price: 8000
     },
     {
         id: 89,
         Image: '',
         title: 'Wild Honey Big',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 90,
         Image: '',
         title: 'Wild Honey small',
-        price: '8,000 Ushs'
+        price: 8000
     },
     {
         id: 91,
         Image: '',
         title: 'Adivasi Beard Oil Big',
-        price: '51,000 Ushs'
+        price: 51000
     },
     {
         id: 92,
         Image: '',
         title: 'Adivasi beard Oil small',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 93,
         Image: '',
         title: 'Hair Shammoo',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 94,
         Image: '',
         title: 'Hair Conditioner',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 95,
         Image: '',
         title: 'Green Tea Big',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 96,
         Image: '',
         title: 'Green Tea Small',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 97,
         Image: '',
         title: 'Epsom Salt',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 98,
         Image: '',
         title: 'Gotu Kola',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 99,
         Image: '',
         title: 'Saba Saba',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 100,
         Image: '',
         title: 'Adivasi Hair Food',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 101,
         Image: '',
         title: 'Artimisia Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 102,
         Image: '',
         title: 'Wheat Gem',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 103,
         Image: '',
         title: 'Golden Butter',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 104,
         Image: '',
         title: 'Black Charcoal Soap',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 105,
         Image: '',
         title: 'Anti Aging Soap Big',
-        price: '25,000 Ushs'
+        price: 25000 
     },
     {
         id: 106,
         Image: '',
         title: 'Queen Soap',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 106,
         Image: '',
         title: 'Aloe Vera Exfollator',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 107,
         Image: '',
         title: 'Turmeric Soap',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 108,
         Image: '',
         title: 'Vanilla Oil',
-        price: '18,000 Ushs'
+        price: 18000
     },
     {
         id: 109,
         Image: '',
         title: 'Jojoba Oil',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 110,
         Image: '',
         title: 'Loe Vera Gel',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 111,
         Image: '',
         title: 'Slimming Tea',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 112,
         Image: '',
         title: 'Belly Liner',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 113,
         Image: '',
         title: 'Sedondo',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 114,
         Image: '',
         title: 'Mpirivuma Powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 115,
         Image: '',
         title: 'Hand Sanitizer',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 116,
         Image: '',
         title: 'Ovacado Oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 117,
         Image: '',
         title: 'Citronella Oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 118,
         Image: '',
         title: 'Eye Salve',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 119,
         Image: '',
         title: 'Adivasi Children 150m/s',
-        price: '45,000 Ushs'
+        price: 45000 
     },
     {
         id: 120,
         Image: '',
         title: 'Adivasi Hair Shampoo',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 121,
         Image: '',
         title: 'Adivasi Hair Spray 500m/s',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 122,
         Image: '',
         title: 'Honeny 125g',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 123,
         Image: '',
         title: 'Cinnamon Nector Big',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 124,
         Image: '',
         title: 'Molasses',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 125,
         Image: '',
         title: 'Stevia Powder big',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 126,
         Image: '',
         title: 'Cocoa Body Butter',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 127,
         Image: '',
         title: 'Mango Butter',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 128,
@@ -777,25 +777,25 @@ const product=[
         id: 129,
         Image: '',
         title: 'Alkaline Powder Big',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 130,
         Image: '',
         title: 'Shea Butter',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 131,
         Image: '',
         title: 'Avocado Oil',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 132,
         Image: '',
         title: 'Stinging Neetle',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 133,
@@ -807,7 +807,7 @@ const product=[
         id: 134,
         Image: '',
         title: 'Lemon Grass Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 135,
@@ -819,643 +819,643 @@ const product=[
         id: 136,
         Image: '',
         title: 'Sphoenex',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 137,
         Image: '',
         title: 'Onyx',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 138,
         Image: '',
         title: 'Orange Opal',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 139,
         Image: '',
         title: 'Clear Quartz Gem Stone',
-        price: '42,000 Ushs'
+        price: 42000
     },
     {
         id: 140,
         Image: '',
         title: 'Ruby Stone',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 141,
         Image: '',
         title: 'Pyrite stone',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 142,
         Image: '',
         title: 'Phoenix Stone',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 143,
         Image: '',
         title: 'onyx stone',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 144,
         Image: '',
         title: 'Orange Opal stone',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 145,
         Image: '',
         title: 'Tanzanita',
-        price: '36,000 Ushs'
+        price: 36000
     },
     {
         id: 146,
         Image: '',
         title: 'Ulcer Tea',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 147,
         Image: '',
         title: 'Almond Oil',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 148,
         Image: '',
         title: 'Jasmine Spray Big',
-        price: '45,000 Ushs'
+        price: 45000
     },
     {
         id: 149,
         Image: '',
         title: 'Rosemary oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 150,
         Image: '',
         title: 'Iodine Oil',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 151,
         Image: '',
         title: 'jasmine spray medium',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 152,
         Image: '',
         title: 'Hot Water Bottle',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 153,
         Image: '',
         title: 'Licorice Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 154,
         Image: '',
         title: 'Flax seeds Big',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 155,
         Image: '',
         title: 'Special Perfume Small',
-        price: '6,000 Ushs'
+        price: 6000
     },
     {
         id: 156,
         Image: '',
         title: 'Special perfume medium',
-        price: '9,000 Ushs'
+        price: 9000
     },
     {
         id: 157,
         Image: '',
         title: 'Special perfume big',
-        price: '15,000 Ushs'
+        price: 15000 
     },
     {
         id: 158,
         Image: '',
         title: 'Charcoal soap',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 159,
         Image: '',
         title: 'Juba Bus',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 160,
         Image: '',
         title: 'Warts cream',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 161,
         Image: '',
         title: 'Reishi Mashroom',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 162,
         Image: '',
         title: 'Adivasi Tea small',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 163,
         Image: '',
         title: 'Adivasi Tea big',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 164,
         Image: '',
         title: 'Amaranth Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 165,
         Image: '',
         title: 'Claben',
-        price: '40,000 Ushs'
+        price: 40000
     },
     {
         id: 166,
         Image: '',
         title: 'Brightening Cream',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 167,
         Image: '',
         title: 'Stevia small',
-        price: '7,000 Ushs'
+        price: 7000
     },
     {
         id: 168,
         Image: '',
         title: 'Anti Aging Lotion',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 169,
         Image: '',
         title: 'Wild Honey small',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 170,
         Image: '',
         title: 'Molasses small',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 171,
         Image: '',
         title: 'Licorice Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 172,
         Image: '',
         title: 'Baobab Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 173,
         Image: '',
         title: 'Alcohol Adiction Crystal',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 174,
         Image: '',
         title: 'Lemon Grass Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 175,
         Image: '',
         title: 'Stevia Liquid',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 176,
         Image: '',
         title: 'Black papper Oil',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 177,
         Image: '',
         title: 'Chia seed big',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 178,
         Image: '',
         title: 'Chia seed small',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 179,
         Image: '',
         title: 'Colon Wash',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 180,
         Image: '',
         title: 'Baby soap',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 181,
         Image: '',
         title: 'Charcoal tooth paste big',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 182,
         Image: '',
         title: 'Soap Making',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 183,
         Image: '',
         title: 'Bee Polen',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 184,
         Image: '',
         title: 'Bee Propolis',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 185,
         Image: '',
         title: 'Great Controversy',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 186,
         Image: '',
         title: 'Patriates and Prophets',
-        price: '45,000 Ushs'
+        price: 45000
     },
     {
         id: 187,
         Image: '',
         title: 'Apple Cider Vinegar',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 188,
         Image: '',
         title: 'Extra Size',
-        price: '60,000 Ushs'
+        price: 60000
     },
     {
         id: 189,
         Image: '',
         title: 'Aloe Vera Plant',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 190,
         Image: '',
         title: 'Soap Mold',
-        price: '85,000 Ushs'
+        price: 85000
     },
     {
         id: 191,
         Image: '',
         title: 'Bee Venom Syrup',
-        price: '90,000 Ushs'
+        price: 90000
     },
     {
         id: 192,
         Image: '',
         title: 'Mango Butter',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 193,
         Image: '',
         title: 'Complete Cyrup Big',
-        price: '140,000 Ushs'
+        price: 140000
     },
     {
         id: 194,
         Image: '',
         title: 'Breast Firming Cream',
-        price: '60,000 Ushs'
+        price: 60000
     },
     {
         id: 195,
         Image: '',
         title: 'Electric Daisy Powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 196,
         Image: '',
         title: 'Electric Daisy oil 70m/s',
-        price: '45,000 Ushs'
+        price: 45000
     },
     {
         id: 197,
         Image: '',
         title: 'Coconut Oil big',
-        price: '40,000 Ushs'
+        price: 40000
     },
     {
         id: 198,
         Image: '',
         title: 'Black stone',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 199,
         Image: '',
         title: 'Complete Cyrup liquid small',
-        price: '70,000 Ushs'
+        price: 70000
     },
     {
         id: 200,
         Image: '',
         title: 'Essubi Eritagwawo',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 201,
         Image: '',
         title: 'Castor Seed',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 202,
         Image: '',
         title: 'Bentonite Clay Powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 203,
         Image: '',
         title: 'Bajaji Capseles',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 204,
         Image: '',
         title: 'Cypress Seed Powder Small',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 205,
         Image: '',
         title: 'Tea Tree Oil',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 206,
         Image: '',
         title: 'Lavender Powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 207,
         Image: '',
         title: 'Liquid Soap',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 208,
         Image: '',
         title: 'Tongue Cleaner',
-        price: '5,000 Ushs'
+        price: 5000
     },
     {
         id: 209,
         Image: '',
         title: 'Brown Sugar',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 210,
         Image: '',
         title: 'Shivilingi Tincture',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 211,
         Image: '',
         title: 'Electric daisy tincture',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 212,
         Image: '',
         title: 'Anti Aging Soap Small',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 213,
         Image: '',
         title: 'Stretch Marks Oil Small',
-        price: '39,000 Ushs'
+        price: 39000
     },
     {
         id: 214,
         Image: '',
         title: 'Vaseline',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 215,
         Image: '',
         title: 'Inflamention Jelly Small',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 216,
         Image: '',
         title: 'Phyll-Albumin powder',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 217,
         Image: '',
         title: 'Fruit Fly Killer',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 218,
         Image: '',
         title: 'Activated Charcoal Small',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 219,
         Image: '',
         title: 'Pollen Tincture',
-        price: '1 Ushs'
+        price: 1 
     },
     {
         id: 220,
         Image: '',
         title: 'Fruit Fly Container',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 221,
         Image: '',
         title: 'Ginger Oil',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 222,
         Image: '',
         title: 'Aidan Fruit Tincture',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 223,
         Image: '',
         title: 'Cocoa Powder big',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 224,
         Image: '',
         title: 'cocoa powder small',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 225,
         Image: '',
         title: 'Warbugia Ugandesis',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 226,
         Image: '',
         title: 'Sea Weed',
-        price: "40,000 Ushs"
+        price: 40000
     },
     {
         id: 227,
         Image: '',
         title: 'Kitagata Water',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 228,
         Image: '',
         title: 'Energy Booster',
-        price: '20,000 Ushs'
+        price: 20000 
     },
     {
         id: 229,
         Image: '',
         title: 'Corn Silk',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 230,
         Image: '',
         title: 'Phyll-Albmin Tincture',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 231,
         Image: '',
         title: 'Adivasi rope',
-        price: '25,000 Ushs'
+        price: 25000
     },
     {
         id: 232,
         Image: '',
         title: 'Diatomite Clay',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 233,
         Image: '',
         title: 'Adivasi Blood Bank',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 234,
         Image: '',
         title: 'Bee Pollen Tincture',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 235,
         Image: '',
         title: 'Pumpkin Powder',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 236,
         Image: '',
         title: 'Shilajit',
-        price: '40,000 Ushs'
+        price: 40000
     },
     {
         id: 237,
         Image: '',
         title: 'Moringa soap',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 238,
         Image: '',
         title: 'Electric daisy resin',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 239,
         Image: '',
         title: 'Electric daisy oil resin',
-        price: '45,000 Ushs'
+        price: 45000 
     },
     {
         id: 240,
         Image: '',
         title: 'Mirror therapy big',
-        price: '600,000 Ushs'
+        price: 600000
     },
     {
         id: 241,
         Image: '',
         title: 'Zinc Powder',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 242,
         Image: '',
         title: 'White soap',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 243,
@@ -1467,103 +1467,103 @@ const product=[
         id: 244,
         Image: '',
         title: 'Eating for life',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 245,
         Image: '',
         title: 'Plants that heal',
-        price: '30,000 Ushs'
+        price: 30000
     },
     {
         id: 246,
         Image: '',
         title: 'Stones',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 247,
         Image: '',
         title: 'Ear Buds',
-        price: '3,000 Ushs'
+        price: 3000
     },
     {
         id: 248,
         Image: '',
         title: 'Immunity booster',
-        price: '50,000 Ushs'
+        price: 50000 
     },
     {
         id: 240,
         Image: '',
         title: 'Man Power',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 250,
         Image: '',
         title: 'Dandelion Powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 251,
         Image: '',
         title: 'Gut Broom',
-        price: '10,000 Ushs'
+        price: 10000 
     },
     {
         id: 252,
         Image: '',
         title: 'Earthing wire',
-        price: '3,000 Ushs'
+        price: 3000
     },
     {
         id: 253,
         Image: '',
         title: 'Elect',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 254,
         Image: '',
         title: 'Red Maca Powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 255,
         Image: '',
         title: 'Castor Oil for Eyes 20m/s',
-        price: '10,000 Ushs'
+        price: 10000
     },
     {
         id: 256,
         Image: '',
         title: 'Neem Oil 100m/s Glass bottle',
-        price: '50,000 Ushs'
+        price: 50000
     },
     {
         id: 257,
         Image: '',
         title: 'Electro-Culture Antenna',
-        price: '45.000 Ushs'
+        price: 45000
     },
     {
         id: 258,
         Image: '',
         title: 'Baobab powder',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 259,
         Image: '',
         title: 'Lions Men powder',
-        price: '20,000 Ushs'
+        price: 20000
     },
     {
         id: 260,
         Image: '',
         title: 'Jasmine Rollon',
-        price: '15,000 Ushs'
+        price: 15000
     },
     {
         id: 261,
@@ -1598,7 +1598,7 @@ const displayitem = (items)=> {
         return(
             `<div class='box'>
                 <div class="img-box">
-                   <img class="images" src="${Image}" alt="this">
+                   <a href="./cart.html"><img class="images" src="${Image}" alt="this"></a>
                 </div>
                 <div class="bottom">
                    <p>${title}</p>
@@ -1614,63 +1614,42 @@ displayitem(product);
 var cart =[];
 
 function addtocart(a){
-    cart.push({product});
+    cart.push(product[a]);
     displaycart();
 }
 function delElement(a){
     cart.pop(a, 1);
     displaycart();
 }
-function displaycart(a){
+const displaycart = ()=>{
     let j = 0, total=0;
     document.getElementById("count").innerHTML=cart.length;
     if(cart.length==0){
-        document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML="$ "+0+"";
+        document.getElementById("cartItem").innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML= "Ushs "+total+",";
 
     }
     else{
-        document.getElementById('cartItem').innerHTML = '';
-let total = 0;
-let j = 0;
-cart.forEach((item) => {
-  var { Image, title, price } = item;
-  console.log(Image + ": " + title, price);
-  total += price;
-  console.log("total: " + total);
-  document.getElementById("total").innerHTML = "$ " + total + "";
-  document.getElementById('cartItem').innerHTML += `
-    <div class='cart-item'>
-      <div class='row-ing'>
-        <img class='rowing' src="${Image}" alt="this">
-      </div>
-      <p style='font-size:10px;'>${title}</p>
-      <h2 style='font-size: 10px;'>${price}</h2>
-      <i class='fa-solid fa-trash' onclick='delElement(${j++})'></i>
-    </div>
-  `;
-})};
-displaycart(product);}
-
-
-//         document.getElementById('cartItem').innerHTML ='';
-//      cart.forEach((item)=> 
-//         {
-//             var {Image, title, price} = item;
-//             // console.log('kita:');
-//             console.log(Image+": " +title, price);
-//             total=total+price;
-//             console.log("total: "+total)
-//         document.getElementById("total").innerHTML="$ "+total+"";
-//         document.getElementById('cartItem').innerHTML+=   `<div class='cart-item'>
-//                 <div class='row-ing'>
-//                     <img class='rowing' src="${Image}" alt="this">
-//                 </div> 
-//                 <p style='font-size:10px;'>${title}</p>
-//                 <h2 style='font-size: 10px;'>${price}</h2>`+
-//                 "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>";
+        document.getElementById('cartItem').innerHTML ='';
+     cart.forEach((item)=> 
+        {
+            var {Image, title, price} = item;
+            // console.log('kita:');
+            console.log(Image+": " +title, price);
+            total=total+price;
+            console.log("total: "+total)
+        document.getElementById("total").innerHTML ="Ushs "+total+",";
+        document.getElementById('cartItem').innerHTML +=   `<div class='cart-item'>
+                <div class='row-ing'>
+                    <img class='rowing' src="${Image}" alt="this">
+                </div> 
+                <p style='font-size:10px;'>${title}</p>
+                <h2 style='font-size: 10px;'>${price}</h2>`+
+                "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>";
             
-//         });
-//     }
-// };
-// displaycart(product);
+        });
+    }
+};
+displaycart(product);
+
+
