@@ -27,7 +27,7 @@ app.post("/submit-form", async (req, res) => {
     // Compose email
     const mailOptions = {
       from: "mndizihiwe@yandex.com",
-      to: "pa",
+      to: "patriciakagoya45@gmail.com",
       subject: "Order from " + name,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\nCart Items: ${cartItems}\nTotal: ${total}`,
     };
