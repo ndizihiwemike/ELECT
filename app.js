@@ -9,27 +9,29 @@ app.use(express.static(path.join(__dirname,"public")));
 
 
 // Handle form submission
-app.post('/submit-form', async (req, res) => {
+app.post("/submit-form", async (req, res) => {
   try {
-    // Extract form data
-    const { Name, email, tel_no, Location } = req.body;
+    const { name, email, phone, location, cartItems, total } = req.body;
+    console.log(name, email, phone, location, cartItems, total);
+    res.status(201).send("Form data submitted successfully!");
 
-    // Create a Nodemailer transporter
+    // Create a Nodemailer transporter (configure with your email provider)
     const transporter = nodemailer.createTransport({
-      service: 'Yandex', // Use your email service provider
+      service: "Yandex",
       auth: {
-        user: 'mndizihiwe@yandex.com', // Your email address
-        pass: 'votxcetqzdxeudvp', // Your email password
+        user: "mndizihiwe@yandex.com",
+        pass: "votxcetqzdxeudvp",
       },
     });
 
     // Compose email
     const mailOptions = {
-      from: 'mndizihiwe@yandex.com',
-      to: 'mickyjackie93@gmail.com', // Specify the recipient's email address
-      subject: 'Form Submission',
-      text: `Name: ${Name}\nEmail: ${email}\nPhone: ${tel_no}\nLocation: ${Location}`,
+      from: "mndizihiwe@yandex.com",
+      to: "pa",
+      subject: "Order from " + name,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\nCart Items: ${cartItems}\nTotal: ${total}`,
     };
+
 
     // Send email
     await transporter.sendMail(mailOptions);
