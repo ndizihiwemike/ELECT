@@ -89,8 +89,11 @@ userForm.addEventListener("submit", async (e) => {
       const cartItem = {
         image: element.querySelector("img").src,
         title: element.querySelector("p").textContent,
-        price: element.querySelector("h2").textContent
+        price: element.querySelector("h2").textContent 
       };
+    console.log("Title:", cartItem.title);
+    console.log("Price:", cartItem.price);
+    console.log("Image URL:", cartItem.image);
       cartItems.push(cartItem);
     }
   }
