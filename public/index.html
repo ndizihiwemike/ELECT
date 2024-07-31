@@ -98,18 +98,12 @@ userForm.addEventListener("submit", async (e) => {
     }
   }
   console.log(cartItems)
-  // const total = document.getElementById("total").value;
-  // Calculate the total price
+  
 const totalPriceString = cartItems.reduce((acc, item) => {
   // totalPrice.toFixed(2);
   return acc + parseFloat(item.price);
 }, 0);
 
-// Create a string to display the cart items in the email
-// const cartItemsString = JSON.stringify(cartItems, null, 2);
-
-// Format totalPrice as a string with 2 decimal places
-// const totalPriceString = totalPrice.toFixed(2);
 
 const cartItemsString = cartItems.map((item, index) => {
   JSON.stringify(cartItems, null, 2);
