@@ -13,6 +13,14 @@
             font-family: 'Times New Roman', Times, serif;
             background-color: red;
         }
+        .here{
+          font-size: 40px;
+          text-align: center;
+        }
+        .heres{
+          font-size: 35px;
+          text-align: center;
+        }
        
     </style>
     <script src="https://kit.fontawesome.com/b8c51a70ab.js" crossorigin="anonymous"></script>
@@ -20,17 +28,14 @@
 <body>
 
 <div class="data">
-<!-- <div class="top">
-    <p>+256772270414</p>
-    <p>mikendizihiwe@gmail.com</p>
-</div> -->
 <div class="header">
-    <p>BUY EVERY THING ONLINE</p>
-    <div class="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></a></div>
+  <h1 class="here">WELCOME TO TRICIA SCENTED SECRETS</h1>
+    <h2 class="heres">BUY EVERY THING ONLINE</h2>
+    <!-- <div class="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></a></div> -->
 </div>
 <div class="searchbar">
-    <input type="text" placeholder="search..." id="searchBar" name="searchBar">
-
+  <input type="text" placeholder="search..." id="searchBar" name="searchBar" style="width: 200px; margin: 5px; height: 40px; font-size: 30px; border-radius: 2vh; flex: 1; margin: 5px; left: 20px;">
+  <div class="cart"><a href="Cartitem.html"><i class="fa-solid fa-cart-shopping"></i><p id="count" style="height: 20px;;">0</p></a></div>
 </div>
    <div class="container">
     <div id="root"></div>
@@ -38,20 +43,20 @@
         <div class="head"><p>my cart</p></div>
         <div>
 
-            <form action="/submit-form" method="post" id="userForm">
+            <form action="/submit-form" method="post" id="userForm" class="form">
                 <label for="Name">Your Name</label>
-                <input id="Name" type="text" placeholder="Name" name="Name" required>
+                <input id="Name" type="text" placeholder="Name" name="Name" required><br>
                 
                 <label for="Email">Your E-mail</label>
-                <input id="Email" type="email" placeholder="E-mail" name="email" required>
+                <input id="Email" type="email" placeholder="E-mail" name="email" required><br>
                 
                 <label for="Phone">Your phone number</label>
-                <input id="Phone" type="tel" placeholder="Phone" name="Phone" required>
+                <input id="Phone" type="tel" placeholder="Phone" name="Phone" required><br>
                 
                 <label for="Location">Your location</label>
-                <input id="Location" type="text" placeholder="Location" name="Location" required>
+                <input id="Location" type="text" placeholder="Location" name="Location" required><br>
                 
-                <div id="cartItem">Your cart is empty</div>
+                <div id="cartItem" class="list">Your cart is empty</div>
               
                 <div class="foot">
                   <h3>Total</h3>

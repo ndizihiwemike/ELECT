@@ -1643,8 +1643,8 @@ const displaycart = ()=>{
                 <div class='row-ing'>
                     <img class='rowing' src="${Image}" alt="this">
                 </div> 
-                <p style='font-size:10px;'>${title}</p>
-                <h2 style='font-size: 10px;'>${price}</h2>`+
+                <p style='font-size:20px;'>${title}</p>
+                <h2 style='font-size: 30px;'>${price}</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+(j++)+")'></i></div>";
             
         });
